@@ -1,0 +1,23 @@
+{
+  "extends": "eslint:recommended",
+  "env": {
+    "node": true,
+    "es6": true
+  },
+  "parserOptions": {
+    "ecmaVersion": 2021
+  },
+  "rules": {
+    "quotes": ["error", "single"],
+    "no-empty-function": "error",
+    "max-nested-callbacks": ["error", { "max": 4 }],
+    "space-before-function-paren": [
+      "error",
+      {
+        "anonymous": "never",
+        "named": "never",
+        "asyncArrow": "always"
+      }
+    ]
+  }
+}
